@@ -17,8 +17,8 @@ function Botoes(btn)
     } 
     else if (btn == 'C')
     {
-        const str = resposta.innerText;
-        const str2 = str.substring(0, str.length - 1);
+        const str = resposta.innerText
+        const str2 = str.substring(0, str.length - 1)
         resposta.innerHTML = str2
     }
     else
