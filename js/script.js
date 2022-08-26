@@ -8,7 +8,7 @@ let valor1 = 0
 let valor2 = 0
 let operador
 
-//função botões
+//FUNÇÃO TECLADO
 function Botoes(btn) 
 {
     if (btn == 'AC')
@@ -17,14 +17,16 @@ function Botoes(btn)
     } 
     else if (btn == 'C')
     {
-         
+        const str = resposta.innerText;
+        const str2 = str.substring(0, str.length - 1);
+        resposta.innerHTML = str2
     }
     else
     {
         resposta.innerText += btn
     }
 }
-
+    // FUNÇÃO IGUAL
 igual.addEventListener('click', () => 
 {
     valor2 = document.querySelector('#res').innerText
@@ -43,8 +45,9 @@ igual.addEventListener('click', () =>
             resposta.innerHTML = `${(+valor1) * (+valor2)}`
             break
     }
-}) 
-    
+})
+
+    // OPERADORES
 soma.addEventListener('click', () => 
 {
     valor1 = +resposta.innerText
