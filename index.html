@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <br>
+        <h1>Calculadora</h1> 
+    </header>
+
+    <section>
+        <div class="res">
+            <p id="res"></p>
+        </div>
+        <div class="operadores">
+            <input id="soma" type="button" onclick="Soma()" value="+">
+            <input id="subtracao" type="button" onclick="Subtracao()" value="-">
+            <input id="divisao" type="button" onclick="Divisao()" value="/">
+            <input id="multi" type="button" onclick="Multi()" value="X">
+        </div>
+        <div class="btn">
+            <div class="btn-numeros">
+                <input type="button" onclick="Botoes(7)" value="7">
+                <input type="button" onclick="Botoes(8)" value="8">
+                <input type="button" onclick="Botoes(9)" value="9">
+                <input type="button" onclick="Botoes(4)" value="4">
+                <input type="button" onclick="Botoes(5)" value="5">
+                <input type="button" onclick="Botoes(6)" value="6">
+                <input type="button" onclick="Botoes(3)" value="3">
+                <input type="button" onclick="Botoes(2)" value="2">
+                <input type="button" onclick="Botoes(1)" value="1">
+                <input type="button" onclick="Botoes('.')" value=".">
+                <input type="button" onclick="Botoes(0)" value="0">
+                <input type="button" onclick="Botoes('C')" value="C" style="background: rgb(24, 24, 24)">
+            </div>
+            <div class="btn2">
+                <input type="button" value="=" style="background: rgb(1, 206, 1);" id="calcular">
+                <input type="button" value="AC" style="background: rgb(240, 46, 32);"  onclick="Botoes('AC')">
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <small>Copyright &copy; Wallace Coelho </small>
+    </footer>
+    <!-- JAVA SCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+</html>
